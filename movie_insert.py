@@ -142,6 +142,13 @@ MERGE (:Movie {
 })
 """)
 
+conn.execute("""
+MERGE (:Movie {
+    name:'Batman Begins',
+    year:2005
+})
+""")
+
 # ❤️ Users Like Genres
 
 conn.execute("""
